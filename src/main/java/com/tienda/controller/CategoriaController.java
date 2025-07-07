@@ -25,6 +25,11 @@ public class CategoriaController {
     public String Maquillaje(Model model) {
         return "maquillaje";
     }
+    
+    @GetMapping("/contacto/contacto")
+    public String Contacto (Model model) {
+        return "/contacto/contacto";
+    }
 
     @PostMapping("/guardar")
     public String guardar(Categoria categoria, @RequestParam("imageFile") MultipartFile imagenFile) {

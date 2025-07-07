@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity">
+
+<head th:replace="~{layout/plantilla :: head}">
+    <title>Hi beauty</title>
+    <meta charset="UTF-8"/>
+</head>
+
+<body>
+
+    <!-- Header global -->
+    <header th:replace="~{layout/plantilla :: header}"/>
+
+    <!-- AQUÍ VA TU CONTENIDO PRINCIPAL -->
+    <main class="container my-5">
+
+        
+
+        <!-- Ofertas -->
+        <h2 class="mb-4">Ofertas por tiempo limitado</h2>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <div class="col">
+                <img src="/fav/jabon.png" style="width: 300px; height: 200px;" alt="Producto 1">
+            </div>
+            <div class="col">
+                <img src="/fav/ceraVe.jpeg" style="width: 300px; height: 200px;" alt="Producto 2">
+            </div>
+            <div class="col">
+                <img src="/fav/mascarilla.jpg" style="width: 300px; height: 200px;" alt="Producto 3">
+            </div>
+            <div class="col">
+                <img src="/fav/Mascara_de_pestañas.jpg" style="width: 300px; height: 200px;" alt="Producto 4">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer global -->
+    <footer th:replace="~{layout/plantilla :: footer}"/>
+
+</body>
+</html>
